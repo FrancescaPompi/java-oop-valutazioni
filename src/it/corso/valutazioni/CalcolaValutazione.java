@@ -16,9 +16,9 @@ public class CalcolaValutazione {
 	
 	// metodo
 	String valutazione(int percentualeAssenze, float mediaVoti) {
-		if((this.percentualeAssenze <= 50 && this.percentualeAssenze >= 25) && this.mediaVoti > 2) {
+		if((this.percentualeAssenze <= 50 && this.percentualeAssenze >= 25) && this.mediaVoti > 2.0F) {
 			return "promosso";
-		} else if(this.percentualeAssenze < 25 && this.mediaVoti >= 2) {
+		} else if(this.percentualeAssenze < 25 && this.mediaVoti >= 2.0F) {
 			return "promosso";
 		} else {
 			return "bocciato";

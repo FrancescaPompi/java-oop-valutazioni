@@ -14,10 +14,11 @@ public class Main {
 		int idStudente = 0;
 		int percentualeAssenze;
 		float mediaVoti;
+		float max = 5.0F;
 		
 		for(int i = 0; i < randomStudenti.length; i++) {
-			percentualeAssenze = random.nextInt(100) + 0;
-			mediaVoti = random.nextInt(5) + 0;
+			percentualeAssenze = random.nextInt(100);
+			mediaVoti = random.nextFloat() * max;
 			
 			randomStudenti[i] = new CalcolaValutazione(idStudente, percentualeAssenze, mediaVoti);
 			idStudente = i + 1;
